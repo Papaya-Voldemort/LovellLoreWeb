@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Word Count Tracker</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Document Word Count Tracker</h1>
+        <p>Current word count progress for your document:</p>
+
+        <!-- Progress Bar Container -->
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+
+        <!-- Display the current word count (optional) -->
+        <p id="word-count-display">Words: 0</p>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
