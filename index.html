@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic HTML Website</title>
+    <title>Eli Nelson's Project Hub</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,7 +15,7 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px;
             text-align: center;
         }
         nav {
@@ -27,53 +27,120 @@
             color: #fff;
             text-decoration: none;
             margin: 0 15px;
+            padding: 8px;
+            font-size: 16px;
         }
         nav a:hover {
-            text-decoration: underline;
+            background-color: #555;
+            border-radius: 5px;
         }
         section {
             padding: 20px;
+            margin: 20px;
         }
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 10px;
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+        .projects {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .project {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            width: 80%;
+            max-width: 600px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .project h3 {
+            margin-top: 0;
+        }
+        .project a {
+            color: #333;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 10px;
+            background-color: #ddd;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .project a:hover {
+            background-color: #444;
+            color: #fff;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Eli Nelson's Project Hub</h1>
+        <p>Welcome to my project hub. Here you'll find links to my current and past projects.</p>
     </header>
 
     <nav>
         <a href="#home">Home</a>
-        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About Me</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <section id="home">
-        <h2>Home Section</h2>
-        <p>This is a basic HTML website. You can modify this template to suit your needs.</p>
+        <h2>Home</h2>
+        <p>This is the central hub for all of Eli Nelson's projects. Below you'll find quick links to various projects I'm working on or have completed.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects">
+            <!-- Example Project 1 -->
+            <div class="project">
+                <h3>Project One: Personal Website</h3>
+                <p>A responsive personal website built using HTML, CSS, and JavaScript. It showcases my skills and portfolio.</p>
+                <a href="https://example.com/project-one" target="_blank">View Project</a>
+            </div>
+
+            <!-- Example Project 2 -->
+            <div class="project">
+                <h3>Project Two: AI Chatbot</h3>
+                <p>An AI-powered chatbot designed for customer service. Built with Python and natural language processing techniques.</p>
+                <a href="https://example.com/project-two" target="_blank">View Project</a>
+            </div>
+
+            <!-- Example Project 3 -->
+            <div class="project">
+                <h3>Project Three: Web Scraper</h3>
+                <p>A Python-based web scraper to collect data from various websites and process it for analysis.</p>
+                <a href="https://example.com/project-three" target="_blank">View Project</a>
+            </div>
+        </div>
     </section>
 
     <section id="about">
-        <h2>About Section</h2>
-        <p>This section contains information about the website or yourself.</p>
+        <h2>About Me</h2>
+        <p>I am Eli Nelson, a developer and tech enthusiast. I enjoy working on web development, AI, and automation projects. This website serves as a showcase for my work and provides a way for you to explore my various projects.</p>
     </section>
 
     <section id="contact">
-        <h2>Contact Section</h2>
-        <p>You can add contact information here.</p>
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to reach out! You can email me at <a href="mailto:eli@example.com">eli@example.com</a>.</p>
     </section>
 
     <footer>
-        <p>&copy; 2025 My Website</p>
+        <p>&copy; 2025 Eli Nelson. All rights reserved.</p>
     </footer>
 
 </body>
